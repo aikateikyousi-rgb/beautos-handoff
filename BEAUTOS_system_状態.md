@@ -1,10 +1,10 @@
 # BEAUTOS システム状態（handoff自動生成）
 
 ## 更新日時
-2026-03-21 07:43
+2026-03-21 07:58
 
 ## HANDOFF_ID
-20260321-074306
+20260321-075805
 
 ---
 
@@ -12,7 +12,7 @@
 ```
   1760	0	com.beautos.tunnel
   1769	0	com.beautos.ollama
-  1775	0	com.beautos.bot
+  2687	0	com.beautos.bot
   1756	0	com.beautos.watcher
   1770	0	com.beautosbrain.personawatcher
   1779	0	com.beautos.web
