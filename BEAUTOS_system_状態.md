@@ -1,10 +1,10 @@
 # BEAUTOS システム状態（handoff自動生成）
 
 ## 更新日時
-2026-03-20 08:20
+2026-03-20 09:45
 
 ## HANDOFF_ID
-20260320-082052
+20260320-094527
 
 ---
 
@@ -25,7 +25,7 @@
 
 ## 直近エラー（各ログ末尾50行）
 ```
-  [pipeline_20260320.log] 2026-03-20 07:00:00,818 ERROR plain text send error: 429 Client Error: Too Many Requests for url: https://api.line.me/v2/bot/message/push
+  [pipeline_20260319.log] 2026-03-19 07:20:01,262 ERROR plain text send error: 429 Client Error: Too Many Requests for url: https://api.line.me/v2/bot/message/push
   [pipeline_20260320.log] 2026-03-20 07:10:00,368 ERROR LINE API error: 429 {"message":"You have reached your monthly limit."}
   [pipeline_20260320.log] 2026-03-20 07:10:00,369 ERROR LINE 通知送信失敗
   [pipeline_20260320.log] 2026-03-20 07:10:00,443 ERROR plain text send error: 429 Client Error: Too Many Requests for url: https://api.line.me/v2/bot/message/push
