@@ -1,10 +1,10 @@
 # BEAUTOS システム状態（handoff自動生成）
 
 ## 更新日時
-2026-03-20 09:45
+2026-03-20 11:08
 
 ## HANDOFF_ID
-20260320-094527
+20260320-110856
 
 ---
 
@@ -12,11 +12,10 @@
 ```
   945	0	com.beautos.tunnel
   4272	0	com.beautos.ollama
-  39076	-9	com.beautos.bot
   64813	0	com.beautos.watcher
   956	0	com.beautosbrain.personawatcher
   35566	0	com.beautos.web
-  （停止中 21件）
+  （停止中 22件）
 ```
 
 ## DB統計
@@ -25,13 +24,13 @@
 
 ## 直近エラー（各ログ末尾50行）
 ```
-  [pipeline_20260319.log] 2026-03-19 07:20:01,262 ERROR plain text send error: 429 Client Error: Too Many Requests for url: https://api.line.me/v2/bot/message/push
-  [pipeline_20260320.log] 2026-03-20 07:10:00,368 ERROR LINE API error: 429 {"message":"You have reached your monthly limit."}
-  [pipeline_20260320.log] 2026-03-20 07:10:00,369 ERROR LINE 通知送信失敗
   [pipeline_20260320.log] 2026-03-20 07:10:00,443 ERROR plain text send error: 429 Client Error: Too Many Requests for url: https://api.line.me/v2/bot/message/push
   [pipeline_20260320.log] 2026-03-20 07:20:00,683 ERROR LINE API error: 429 {"message":"You have reached your monthly limit."}
   [pipeline_20260320.log] 2026-03-20 07:20:00,684 ERROR LINE 通知送信失敗
   [pipeline_20260320.log] 2026-03-20 07:20:00,751 ERROR plain text send error: 429 Client Error: Too Many Requests for url: https://api.line.me/v2/bot/message/push
+  [pipeline_20260320.log] 2026-03-20 10:51:09,068 ERROR LINE API error: 429 {"message":"You have reached your monthly limit."}
+  [pipeline_20260320.log] 2026-03-20 10:51:09,070 ERROR LINE 通知送信失敗
+  [pipeline_20260320.log] 2026-03-20 10:51:09,174 ERROR plain text send error: 429 Client Error: Too Many Requests for url: https://api.line.me/v2/bot/message/push
   [slack_bot.log] 2026-03-14 23:57:07,644 ERROR slack_bolt.App: Failed to check the state of sock (session id: 7d505a4e-beac-4036-8609-3c65397307ec, error: SSLError, message: [SYS] unknown error (_ssl.c:2427))
   [slack_bot.log] 2026-03-14 23:57:17,721 ERROR slack_bolt.App: Failed to check the state of sock (session id: 7d505a4e-beac-4036-8609-3c65397307ec, error: SSLError, message: [SSL: BAD_LENGTH] bad length (_ssl.c:2427))
   [slack_bot.log] 2026-03-14 23:57:27,796 ERROR slack_bolt.App: Failed to check the state of sock (session id: 7d505a4e-beac-4036-8609-3c65397307ec, error: SSLError, message: [SSL: BAD_LENGTH] bad length (_ssl.c:2427))
