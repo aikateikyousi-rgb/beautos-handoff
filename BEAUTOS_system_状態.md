@@ -1,22 +1,22 @@
 # BEAUTOS システム状態（handoff自動生成）
 
 ## 更新日時
-2026-03-22 18:56
+2026-03-22 23:20
 
 ## HANDOFF_ID
-20260322-185625
+20260322-232041
 
 ---
 
 ## 稼働サービス
 ```
-  10106	0	com.beautos.tunnel
-  1769	0	com.beautos.ollama
-  3604	-15	com.beautos.bot
-  1756	0	com.beautos.watcher
-  1770	0	com.beautosbrain.personawatcher
-  10466	0	com.beautos.web
-  1758	0	com.beautos.evidence-watcher
+  989	0	com.beautos.tunnel
+  997	0	com.beautos.ollama
+  1003	0	com.beautos.bot
+  984	0	com.beautos.watcher
+  998	0	com.beautosbrain.personawatcher
+  1008	0	com.beautos.web
+  987	0	com.beautos.evidence-watcher
   （停止中 24件）
 ```
 
