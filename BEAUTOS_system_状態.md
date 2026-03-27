@@ -1,10 +1,10 @@
 # BEAUTOS システム状態（handoff自動生成）
 
 ## 更新日時
-2026-03-27 10:30
+2026-03-27 16:28
 
 ## HANDOFF_ID
-20260327-103032
+20260327-162823
 
 ---
 
@@ -12,7 +12,7 @@
 ```
   1126	0	com.beautos.tunnel
   1134	0	com.beautos.ollama
-  1612	1	com.beautos.bot
+  14274	-9	com.beautos.bot
   1122	0	com.beautos.watcher
   1135	0	com.beautosbrain.personawatcher
   1145	0	com.beautos.web
@@ -41,7 +41,7 @@
 
 ## 直近の変更・handoff内容
 ```
-python3 -c "from PIL import Image; print('OK')"
+テスト
 ```
 
 ---
