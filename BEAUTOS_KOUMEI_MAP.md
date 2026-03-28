@@ -1,15 +1,14 @@
 # BEAUTOS 孔明の地図
-最終更新：2026-03-28 13:03  |  HANDOFF_ID: 20260328-130326
+最終更新：2026-03-29 00:41  |  HANDOFF_ID: 20260329-004105
 
 ## 現在地（事業フェーズ）
-BEAUTOSプロジェクトでは、handoffプロセスの改善とGitHubおよびGoogle Docsへの出力確認が完了した。積み残しタスクとして、ブランド別確認から順に進行中で、インポートanceCalibratorの次のステップはfeedback_db 30件到達後となっている。ingredients_master.dbのデータが大幅に増加していることを確認した。
+BEAUTOSプロジェクトは現在、多数の商品に対するバッチ生成とブランド別確認に着手しています。既存のタスクではInstagram、パートナーLP、CONNECT tierの更新も含まれており、システムの手順も改善が進められています。法務関連の対応やStripeの継続課金チェックも進行中です。
 
 ## 主要な意思決定とその理由
-- handoff基盤の修正：handoff_draft.txt経由でコンテンツが確実に渡るようにする
-- .zshrcのhandoff関数を優先順位付きで再設計
-- handoff関数：pbpaste依存からhandoff_draft.txt優先に変更
-- ingredients_master.dbのデータ数を増加させる（44件から244件に）
-- 次回のタスクはviewerブランド別確認から再開する
+- handoff基盤の修正：handoff_draft.txt経由でコンテンツが確実に渡るように改善
+- .zshrcのhandoff関数を優先順位付きで再設計：手順を効率化し、確実な動作を確保
+- handoff関数の依存性変更：pbpasteからhandoff_draft.txt優先に変更することで安定性向上
+- ingredients_master.dbの更新：データベースの拡大（44件→244件）によりシステムの拡張性向上
 
 ## 却下した案・失敗した試みとその理由
 なし
@@ -18,17 +17,11 @@ BEAUTOSプロジェクトでは、handoffプロセスの改善とGitHubおよび
 なし
 
 ## 殿の判断軸
-永田豪さんの判断基準・価値観・優先順位は以下のようである：
-
-- システムの安定性と効率性の向上
-- プロジェクトタスクの整理と優先順位付け
-- データの正確さと追跡のための記録の重要性
-- タスクの完了確認と積み残しの明確化
-- バックアップと依存関係の最小化（例：handoff関数のpbpaste依存を手動ファイルに変更）
+（抽出失敗）
 
 ## 次セッションで孔明がまず確認すべきこと
-viewerブランド別確認
-全商品バッチ生成の準備
-beautos_certifiedの状況確認
-Instagramの最新状況確認
-partner LPの進行状況確認
+①viewerブランド別確認→Geminiバッチ（商品数多い順）
+②全商品バッチ生成（1日500枚×10日）
+③beautos_certified準備開始
+④Instagram戦略の再確認
+⑤partner LPの進捗確認
