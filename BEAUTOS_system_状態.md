@@ -1,16 +1,17 @@
 # BEAUTOS システム状態（handoff自動生成）
 
 ## 更新日時
-2026-03-30 00:59
+2026-03-30 02:06
 
 ## HANDOFF_ID
-20260330-005909
+20260330-020658
 
 ---
 
 ## 稼働サービス
 ```
   913	0	com.beautos.tunnel
+  55338	0	com.beautos.hunter
   922	0	com.beautos.ollama
   53652	-15	com.beautos.bot
   44664	-9	com.beautos.watcher
@@ -18,7 +19,7 @@
   44667	-9	com.beautos.web
   44670	-9	com.beautos.evidence-watcher
   44672	-9	com.beautos.partner
-  （停止中 18件）
+  （停止中 17件）
 ```
 
 ## DB統計
@@ -41,26 +42,42 @@
 
 ## 直近の変更・handoff内容
 ```
-# BEAUTOS引き継ぎ 2026-03-30
+# BEAUTOS引き継ぎ 2026-03-29
+
 ## 本日完了
-- nagata_comment_generator.py 完成・動作確認済み（禁止ワード・口調・開始ルール・成分マッチング全修正）
-- hair_knowledge_scraper.py に特約店4ブランド追加（オージュア・サブリミック・WELLA・バイカルテ）
-## 積み残しタスク
-1. hair_scraper完了確認（PID:53717 バックグラウンド実行中・約5〜6時間）→ 完了後にevidence_finder実行 → nagata_comment本番生成
-2. 4/1リニューアル告知配信（642人）← 残り2日
-3. リッチメニュー更新
-4. ハッシュタグ検知実装
-5. beautos_certified カラム追加
-6. Instagram @nagata_beautos 開設
-7. partner LP / CONNECT tier
+- user_profile.db実装・稼働（BEAUTOS独自ID発番・ゲスト/メンバー分岐・WALモード）
+- ウェルカムFlex更新（BEAUTOS STORE文面・サロンコード143385追加）
+- nagata-gouモデル更新（affes→BEAUTOS STORE）・再ビルド済み
+- brand_config.json更新（affes→BEAUTOS STORE）
+- 4/1 09:00リマインド自動送信設定（launchd登録済み）
+- 配信文面下書き保存済み（LINE管理画面）
+- AI戦略設計書docx・セッション記録docx作成
+- 特約店4ブランド確定（オージュア・サブリミック・WELLA・バイカルテ）
+- BEAUTOS購買導線確定（beautos-ai.com→LINE→ライフカルテ）
+
+## 積み残しタスク（優先順）
+1. nagata_comment_generator実装（本丸・今週中）
+2. 履歴を覚える機能・chat_history蓄積
+3. ハッシュタグ検知実装（#プレフィックスで髪の悩みDB蓄積）
+4. 4/1リニューアル告知配信（642人・LINE管理画面から手動）
+5. 2週間後リニューアル3点セット（名前変更・リッチメニュー更新・配信）
+6. リッチメニュー「髪の悩みをつぶやく」ボタン追加
+7. 特約店ブランドURL追加（scraper対象・4ブランド）
+8. AI会議結果の孔明裁定（新規チャットで実施）
+9. パブリック→サロン専売切り替えデータ収集設計
+10. BEAUTOS ID登録Webページ（beautos-ai.com/register）
+
 ## システム状態変更
-- hair_scraper バックグラウンド実行中（PID:53717）
-- store_brain.db: hair_knowledge 40件以上（増加中）
-- nagata_comment_generator.py: 完成済み・本番待機中
+- user_profile.db新規作成・稼働中
+- bot/user_profile_manager.py新規作成
+- bot/line_bot_server.py 4箇所差し込み
+- models/Modelfile.nagata-gou更新・再ビルド済み
+- config/brand_config.json更新済み
+- com.beautos.renewal.reminder launchd登録済み（4/1 09:00発火）
+
 ## 次回やること
-- tail ~/beautos-platform/logs/hair_scraper_20260329.log で完了確認
-- evidence_finder実行 → nagata_comment全件生成
-- 4/1告知配信文面作成・送信
+新規チャットでAI会議（Gemini・GPT・GROK）結果を孔明が裁定。
+nagata_comment_generator設計→Claude Code実装。
 ```
 
 ---
