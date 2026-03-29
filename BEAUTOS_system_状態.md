@@ -1,10 +1,10 @@
 # BEAUTOS システム状態（handoff自動生成）
 
 ## 更新日時
-2026-03-29 16:35
+2026-03-29 18:56
 
 ## HANDOFF_ID
-20260329-163554
+20260329-185605
 
 ---
 
@@ -12,12 +12,12 @@
 ```
   913	0	com.beautos.tunnel
   922	0	com.beautos.ollama
-  44093	-15	com.beautos.bot
-  908	0	com.beautos.watcher
+  44673	-9	com.beautos.bot
+  44664	-9	com.beautos.watcher
   923	0	com.beautosbrain.personawatcher
-  26515	0	com.beautos.web
-  911	0	com.beautos.evidence-watcher
-  933	0	com.beautos.partner
+  44667	-9	com.beautos.web
+  44670	-9	com.beautos.evidence-watcher
+  44672	-9	com.beautos.partner
   （停止中 27件）
 ```
 
@@ -41,31 +41,32 @@
 
 ## 直近の変更・handoff内容
 ```
-# BEAUTOS引き継ぎ 2026-03-28
+# BEAUTOS引き継ぎ 2026-03-29
 
 ## 本日完了
-- handoff基盤の修正（handoff_draft.txt経由でコンテンツが確実に渡るよう修正）
-- .zshrcのhandoff関数を優先順位付きで再設計・動作確認済み
-- Layer1（Google Docs）・Layer2（GitHub）両方への書き込み確認済み
+- AI会議（GPT×5本・Gemini×7本・GROK×2本）孔明裁定完了
+- 水質データ全47都道府県をnagata_knowledge.dbに投入完了
+- hair_knowledge_scraper.py URL収集ロジック修正（demi43・lebel41・milbon482件）
+- store_brain.db：hair_knowledge 47件・evidence_scores 6件（スクレイパー継続中）
+- 鉄則メモリ更新（Claude Code=複雑な新規実装のみ）
 
-## 積み残しタスク（優先順・番号付き）
-①viewerブランド別確認→Geminiバッチ（商品数多い順）
-②全商品バッチ生成（1日500枚×10日）
-③beautos_certified
-④Instagram
-⑤partner LP
-⑥CONNECT tier
-⑦LINE試験（10名美容師）
-⑧Stripe（継続課金チェック→続行から）
-⑨法務（ディーラーキックバック）
-⑩ImportanceCalibrator（feedback_db 30件到達後）
+## 積み残しタスク（優先順）
+① nagata_comment_generator実装（新規チャットで即着手）
+② hair_knowledge_scraper完了確認（milbon処理中・バックグラウンド継続）
+③ evidence_finder再実行（6件で停止中・成分master全件対象に）
+④ ハッシュタグ検知実装
+⑤ chat_history蓄積
+⑥ 4/1リニューアル告知配信（642人・手動）
+⑦ 特約店ブランドURL追加（scraper対象に4ブランド追加）
 
 ## システム状態変更
-- handoff関数：pbpaste依存 → handoff_draft.txt優先に変更
-- ingredients_master.db: 44件→244件（前回比増加を確認）
+- nagata_knowledge.db：水質データ47件追加（system_water_quality）
+- store_brain.db：hair_knowledge/evidence_scoresテーブル新規稼働
+- hair_knowledge_scraper.py：URL収集ロジック修正済み（PID:46446継続中）
 
 ## 次回やること
-viewerブランド別確認から再開
+新規チャットでnagata_comment_generator設計→Claude Code実装。
+設計原則：①売らないアドバイス組み込み②無料/購入者2段出力③他店購入品フラグ分岐④水質×居住地域連携⑤14日後フォロー5段階評価
 ```
 
 ---
