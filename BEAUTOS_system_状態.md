@@ -1,10 +1,10 @@
 # BEAUTOS システム状態（handoff自動生成）
 
 ## 更新日時
-2026-03-30 00:53
+2026-03-30 00:59
 
 ## HANDOFF_ID
-20260330-005354
+20260330-005909
 
 ---
 
@@ -43,34 +43,24 @@
 ```
 # BEAUTOS引き継ぎ 2026-03-30
 ## 本日完了
-- GitHub二層目廃止・handoff一層化確定
-- image-fetcher/image-scraper停止・削除（Hyumi12件lifekarte URL復元済み）
-- 不要バッチ8本削除（meo/connect/interview/brain.growth/brand-scraper/category-classifier/stockmonitor）
-- neta_hunter→seed_knowledge パイプライン修通（pending直投入）
-- BEAUTOS管理通知LINE（@020ymzto）送信切り替え完了（毎朝7時Flexカード）
-- Telegramフォールバック廃止
-- ADMIN_LINE_ID更新（Uc043e9eabc27cae9e6a7b55f10d77aef）
-
-## 積み残しタスク（優先順）
-① 特約店4ブランド公式URL→hair_scraper→evidence_scores補強→nagata_comment本番生成
-② 履歴を覚える機能（chat_history蓄積）
-③ ハッシュタグ検知実装
-④ 4/1リニューアル告知配信（642人）
-⑤ リニューアル3点セット（アカウント名変更・リッチメニュー更新・AI相談稼働告知）
-⑥ beautos_certifiedカラム追加
-⑦ Instagram @nagata_beautos 開設
-⑧ partner LP / CONNECT tier設計
-
+- nagata_comment_generator.py 完成・動作確認済み（禁止ワード・口調・開始ルール・成分マッチング全修正）
+- hair_knowledge_scraper.py に特約店4ブランド追加（オージュア・サブリミック・WELLA・バイカルテ）
+## 積み残しタスク
+1. hair_scraper完了確認（PID:53717 バックグラウンド実行中・約5〜6時間）→ 完了後にevidence_finder実行 → nagata_comment本番生成
+2. 4/1リニューアル告知配信（642人）← 残り2日
+3. リッチメニュー更新
+4. ハッシュタグ検知実装
+5. beautos_certified カラム追加
+6. Instagram @nagata_beautos 開設
+7. partner LP / CONNECT tier
 ## システム状態変更
-- ADMIN_LINE_ID=Uc043e9eabc27cae9e6a7b55f10d77aef
-- line_notifier送信先：@020ymzto（管理通知）に変更
-- LINE_NOTIFY_ACCESS_TOKEN：@020ymztoのトークンに更新
-- webhook/notify エンドポイント追加（bot.beautos-ai.com/webhook/notify）
-- neta_candidates.json：pending→RAG直投入に変更
-- 不要バッチ8本のplist削除済み
-
+- hair_scraper バックグラウンド実行中（PID:53717）
+- store_brain.db: hair_knowledge 40件以上（増加中）
+- nagata_comment_generator.py: 完成済み・本番待機中
 ## 次回やること
-nagata_comment本番生成（store_brain.db充実が先決）
+- tail ~/beautos-platform/logs/hair_scraper_20260329.log で完了確認
+- evidence_finder実行 → nagata_comment全件生成
+- 4/1告知配信文面作成・送信
 ```
 
 ---
