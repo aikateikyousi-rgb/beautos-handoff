@@ -1,10 +1,10 @@
 # BEAUTOS システム状態（handoff自動生成）
 
 ## 更新日時
-2026-03-29 00:41
+2026-03-29 16:35
 
 ## HANDOFF_ID
-20260329-004105
+20260329-163554
 
 ---
 
@@ -12,13 +12,13 @@
 ```
   913	0	com.beautos.tunnel
   922	0	com.beautos.ollama
-  20287	-15	com.beautos.bot
+  44093	-15	com.beautos.bot
   908	0	com.beautos.watcher
   923	0	com.beautosbrain.personawatcher
-  16768	0	com.beautos.web
+  26515	0	com.beautos.web
   911	0	com.beautos.evidence-watcher
   933	0	com.beautos.partner
-  （停止中 26件）
+  （停止中 27件）
 ```
 
 ## DB統計
@@ -27,13 +27,13 @@
 
 ## 直近エラー（各ログ末尾50行）
 ```
-  [pipeline_20260327.log] 2026-03-27 07:00:49,896 ERROR LINE API error: 429 {"message":"You have reached your monthly limit."}
-  [pipeline_20260328.log] 2026-03-28 07:00:22,572 ERROR LINE API error: 400 {"message":"Failed to send messages"}
-  [pipeline_20260328.log] 2026-03-28 07:00:22,574 ERROR LINE 通知送信失敗
-  [pipeline_20260328.log] 2026-03-28 07:00:22,703 ERROR plain text send error: 400 Client Error: Bad Request for url: https://api.line.me/v2/bot/message/push
-  [pipeline_20260328.log] 2026-03-28 07:00:55,678 ERROR LINE API error: 400 {"message":"Failed to send messages"}
-  [pipeline_20260328.log] 2026-03-28 07:00:55,680 ERROR LINE 通知送信失敗
   [pipeline_20260328.log] 2026-03-28 07:00:55,801 ERROR plain text send error: 400 Client Error: Bad Request for url: https://api.line.me/v2/bot/message/push
+  [pipeline_20260329.log] 2026-03-29 07:00:24,869 ERROR LINE API error: 400 {"message":"Failed to send messages"}
+  [pipeline_20260329.log] 2026-03-29 07:00:24,872 ERROR LINE 通知送信失敗
+  [pipeline_20260329.log] 2026-03-29 07:00:24,959 ERROR plain text send error: 400 Client Error: Bad Request for url: https://api.line.me/v2/bot/message/push
+  [pipeline_20260329.log] 2026-03-29 07:00:51,832 ERROR LINE API error: 400 {"message":"Failed to send messages"}
+  [pipeline_20260329.log] 2026-03-29 07:00:51,834 ERROR LINE 通知送信失敗
+  [pipeline_20260329.log] 2026-03-29 07:00:51,924 ERROR plain text send error: 400 Client Error: Bad Request for url: https://api.line.me/v2/bot/message/push
   [slack_bot.log] 2026-03-14 23:57:07,644 ERROR slack_bolt.App: Failed to check the state of sock (session id: 7d505a4e-beac-4036-8609-3c65397307ec, error: SSLError, message: [SYS] unknown error (_ssl.c:2427))
   [slack_bot.log] 2026-03-14 23:57:17,721 ERROR slack_bolt.App: Failed to check the state of sock (session id: 7d505a4e-beac-4036-8609-3c65397307ec, error: SSLError, message: [SSL: BAD_LENGTH] bad length (_ssl.c:2427))
   [slack_bot.log] 2026-03-14 23:57:27,796 ERROR slack_bolt.App: Failed to check the state of sock (session id: 7d505a4e-beac-4036-8609-3c65397307ec, error: SSLError, message: [SSL: BAD_LENGTH] bad length (_ssl.c:2427))
